@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		031175E22CAA95CA00A9E83A /* AcneLVLPROV1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 031175E12CAA95CA00A9E83A /* AcneLVLPROV1.mlmodel */; };
+		031175E42CAA966800A9E83A /* Acne27SepPRO.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 031175E32CAA966800A9E83A /* Acne27SepPRO.mlmodel */; };
 		2EDDAC1F2CAA85620009E32F /* LiveImageClassApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDDAC1E2CAA85620009E32F /* LiveImageClassApp.swift */; };
 		2EDDAC212CAA85620009E32F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDDAC202CAA85620009E32F /* ContentView.swift */; };
 		2EDDAC232CAA85640009E32F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EDDAC222CAA85640009E32F /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		031175E12CAA95CA00A9E83A /* AcneLVLPROV1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = AcneLVLPROV1.mlmodel; sourceTree = "<group>"; };
+		031175E32CAA966800A9E83A /* Acne27SepPRO.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Acne27SepPRO.mlmodel; sourceTree = "<group>"; };
 		2EDDAC1B2CAA85620009E32F /* LiveImageClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveImageClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EDDAC1E2CAA85620009E32F /* LiveImageClassApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveImageClassApp.swift; sourceTree = "<group>"; };
 		2EDDAC202CAA85620009E32F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +38,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		031175E52CAA966D00A9E83A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2EDDAC2C2CAA85A10009E32F /* FishShrimpClassificationV1.mlmodel */,
+				031175E12CAA95CA00A9E83A /* AcneLVLPROV1.mlmodel */,
+				031175E32CAA966800A9E83A /* Acne27SepPRO.mlmodel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		2EDDAC122CAA85620009E32F = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +68,8 @@
 			isa = PBXGroup;
 			children = (
 				2EDDAC1E2CAA85620009E32F /* LiveImageClassApp.swift */,
-				2EDDAC2C2CAA85A10009E32F /* FishShrimpClassificationV1.mlmodel */,
 				2EDDAC202CAA85620009E32F /* ContentView.swift */,
+				031175E52CAA966D00A9E83A /* Models */,
 				2EDDAC222CAA85640009E32F /* Assets.xcassets */,
 				2EDDAC242CAA85640009E32F /* Preview Content */,
 			);
@@ -140,7 +154,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				031175E42CAA966800A9E83A /* Acne27SepPRO.mlmodel in Sources */,
 				2EDDAC212CAA85620009E32F /* ContentView.swift in Sources */,
+				031175E22CAA95CA00A9E83A /* AcneLVLPROV1.mlmodel in Sources */,
 				2EDDAC1F2CAA85620009E32F /* LiveImageClassApp.swift in Sources */,
 				2EDDAC2D2CAA85A10009E32F /* FishShrimpClassificationV1.mlmodel in Sources */,
 			);
@@ -276,7 +292,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LiveImageClass/Preview Content\"";
-				DEVELOPMENT_TEAM = C59QF2W8P6;
+				DEVELOPMENT_TEAM = 4JD2N84N6P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
@@ -306,7 +322,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LiveImageClass/Preview Content\"";
-				DEVELOPMENT_TEAM = C59QF2W8P6;
+				DEVELOPMENT_TEAM = 4JD2N84N6P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";

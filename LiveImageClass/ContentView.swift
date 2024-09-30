@@ -59,7 +59,7 @@ class ImageClassificationViewModel: NSObject, ObservableObject {
 
     private var captureSession: AVCaptureSession!
     private var previewLayer: AVCaptureVideoPreviewLayer!
-    private let mlModel = try! FishShrimpClassificationV1().model
+    private let mlModel = try! Acne27SepPRO().model
     private var request: VNCoreMLRequest!
     private var currentCamera: AVCaptureDevice.Position = .back  // Default to back camera
 
@@ -92,7 +92,14 @@ class ImageClassificationViewModel: NSObject, ObservableObject {
         videoOutput.setSampleBufferDelegate(self, queue: DispatchQueue(label: "videoQueue"))
         captureSession.addOutput(videoOutput)
 
+        if currentCamera == .front {
+                if let connection = videoOutput.connection(with: .video) {
+                    connection.isVideoMirrored = true
+                }
+            }
+        
         captureSession.startRunning()
+        
     }
 
     func startCamera() {
